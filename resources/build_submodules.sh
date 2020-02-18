@@ -158,7 +158,7 @@ if [ $? -ne 0 ]; then
   	fi
   fi
   echo "[PIRA] Found Python.h at " $pythonheader
-  ../configure --prefix=$extinstalldir/extrap CPPFLAGS=-I$pythonheader 2>&1 > /dev/null
+  ../configure --prefix=$extinstalldir/extrap CPPFLAGS=-I/usr/bin/../include/python3.7m/ 2>&1 > /dev/null
   if [ $? -ne 0 ]; then
   	echo "[PIRA] Configuring Extra-P failed."
   	exit 1
