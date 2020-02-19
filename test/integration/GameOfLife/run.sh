@@ -12,7 +12,7 @@ echo $PATH
 
 # Export all the Pira tools for the integration test
 cd $testDir/../../../resources
-. setup_paths.sh
+#. setup_paths.sh
 cd $testDir
 echo $PATH
 
